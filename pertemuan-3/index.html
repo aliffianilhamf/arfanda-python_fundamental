@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online - Daftar Produk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-shopping-bag text-blue-600 text-2xl"></i>
+                    <span class="text-2xl font-bold text-gray-800">ShopHub</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <input type="text" placeholder="Cari produk..."
+                        class="hidden md:block px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <button class="relative p-2 text-gray-600 hover:text-blue-600">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span
+                            class="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                    </button>
+                    <button
+                        class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl sm:text-4xl font-bold mb-4">Selamat Datang di ShopHub</h1>
+            <p class="text-lg opacity-90">Temukan ribuan produk berkualitas dengan harga terbaik</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="bg-white border-b border-gray-200 py-4 sticky top-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap gap-3 items-center">
+                <span class="font-semibold text-gray-700">Kategori:</span>
+                <button
+                    class="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Semua</button>
+                <button
+                    class="px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-100 transition">Elektronik</button>
+                <button
+                    class="px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-100 transition">Fashion</button>
+                <button
+                    class="px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-100 transition">Perabotan</button>
+                <button
+                    class="px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-100 transition">Olahraga</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-8">Produk Terbaru</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden group">
+                    <div class="relative overflow-hidden bg-gray-200 h-48">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop"
+                            alt="Produk 1"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                        <span
+                            class="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 rounded text-sm font-semibold">-20%</span>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500 mb-2">Elektronik</p>
+                        <h3 class="font-semibold text-gray-800 mb-2 line-clamp-2">Headphone Wireless Premium</h3>
+                        <div class="flex items-center gap-1 mb-3">
+                            <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                            <span class="text-sm text-gray-600">(128 ulasan)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">Rp 399K</span>
+                                <span class="text-sm text-gray-400 line-through ml-2">Rp 499K</span>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
+                            <i class="fas fa-shopping-cart mr-2"></i>Beli
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden group">
+                    <div class="relative overflow-hidden bg-gray-200 h-48">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop"
+                            alt="Produk 2"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                        <span
+                            class="absolute top-3 right-3 bg-orange-500 text-white px-3 py-1 rounded text-sm font-semibold">Hot</span>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500 mb-2">Aksesori</p>
+                        <h3 class="font-semibold text-gray-800 mb-2 line-clamp-2">Jam Tangan Smartwatch</h3>
+                        <div class="flex items-center gap-1 mb-3">
+                            <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                            <span class="text-sm text-gray-600">(256 ulasan)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">Rp 599K</span>
+                                <span class="text-sm text-gray-400 line-through ml-2">Rp 699K</span>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
+                            <i class="fas fa-shopping-cart mr-2"></i>Beli
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden group">
+                    <div class="relative overflow-hidden bg-gray-200 h-48">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=300&fit=crop"
+                            alt="Produk 3"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                        <span
+                            class="absolute top-3 right-3 bg-green-500 text-white px-3 py-1 rounded text-sm font-semibold">Baru</span>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500 mb-2">Fashion</p>
+                        <h3 class="font-semibold text-gray-800 mb-2 line-clamp-2">Kacamata Anti Radiasi</h3>
+                        <div class="flex items-center gap-1 mb-3">
+                            <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                            <span class="text-sm text-gray-600">(89 ulasan)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">Rp 249K</span>
+                                <span class="text-sm text-gray-400 line-through ml-2">Rp 299K</span>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
+                            <i class="fas fa-shopping-cart mr-2"></i>Beli
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden group">
+                    <div class="relative overflow-hidden bg-gray-200 h-48">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop"
+                            alt="Produk 4"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500 mb-2">Elektronik</p>
+                        <h3 class="font-semibold text-gray-800 mb-2 line-clamp-2">Powerbank 20000mAh</h3>
+                        <div class="flex items-center gap-1 mb-3">
+                            <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                            <span class="text-sm text-gray-600">(342 ulasan)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">Rp 179K</span>
+                                <span class="text-sm text-gray-400 line-through ml-2">Rp 219K</span>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
+                            <i class="fas fa-shopping-cart mr-2"></i>Beli
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden group">
+                    <div class="relative overflow-hidden bg-gray-200 h-48">
+                        <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=400&h=300&fit=crop"
+                            alt="Produk 5"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                        <span
+                            class="absolute top-3 right-3 bg-purple-500 text-white px-3 py-1 rounded text-sm font-semibold">Flash</span>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500 mb-2">Olahraga</p>
+                        <h3 class="font-semibold text-gray-800 mb-2 line-clamp-2">Sepatu Olahraga Premium</h3>
+                        <div class="flex items-center gap-1 mb-3">
+                            <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                            <span class="text-sm text-gray-600">(156 ulasan)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">Rp 459K</span>
+                                <span class="text-sm text-gray-400 line-through ml-2">Rp 599K</span>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
+                            <i class="fas fa-shopping-cart mr-2"></i>Beli
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden group">
+                    <div class="relative overflow-hidden bg-gray-200 h-48">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop"
+                            alt="Produk 6"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                        <span
+                            class="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 rounded text-sm font-semibold">-30%</span>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500 mb-2">Gadget</p>
+                        <h3 class="font-semibold text-gray-800 mb-2 line-clamp-2">Kabel USB Type-C 2m</h3>
+                        <div class="flex items-center gap-1 mb-3">
+                            <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                            <span class="text-sm text-gray-600">(512 ulasan)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">Rp 49K</span>
+                                <span class="text-sm text-gray-400 line-through ml-2">Rp 69K</span>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
+                            <i class="fas fa-shopping-cart mr-2"></i>Beli
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 7 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden group">
+                    <div class="relative overflow-hidden bg-gray-200 h-48">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=300&fit=crop"
+                            alt="Produk 7"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500 mb-2">Fashion</p>
+                        <h3 class="font-semibold text-gray-800 mb-2 line-clamp-2">Tas Laptop Waterproof</h3>
+                        <div class="flex items-center gap-1 mb-3">
+                            <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                            <span class="text-sm text-gray-600">(214 ulasan)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">Rp 349K</span>
+                                <span class="text-sm text-gray-400 line-through ml-2">Rp 449K</span>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
+                            <i class="fas fa-shopping-cart mr-2"></i>Beli
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 8 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden group">
+                    <div class="relative overflow-hidden bg-gray-200 h-48">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop"
+                            alt="Produk 8"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                        <span
+                            class="absolute top-3 right-3 bg-green-500 text-white px-3 py-1 rounded text-sm font-semibold">Baru</span>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500 mb-2">Elektronik</p>
+                        <h3 class="font-semibold text-gray-800 mb-2 line-clamp-2">Mouse Wireless Ergonomis</h3>
+                        <div class="flex items-center gap-1 mb-3">
+                            <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                            <span class="text-sm text-gray-600">(178 ulasan)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">Rp 129K</span>
+                                <span class="text-sm text-gray-400 line-through ml-2">Rp 169K</span>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
+                            <i class="fas fa-shopping-cart mr-2"></i>Beli
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="flex justify-center mt-12">
+                <button
+                    class="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition font-semibold">
+                    Muat Produk Lainnya
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-white py-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="text-4xl text-blue-600 mb-3"><i class="fas fa-truck"></i></div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Pengiriman Gratis</h3>
+                    <p class="text-gray-600 text-sm">Untuk pembelian di atas Rp 100.000</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl text-blue-600 mb-3"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="font-semibold text-gray-800 mb-2">100% Aman</h3>
+                    <p class="text-gray-600 text-sm">Pembayaran aman dan terpercaya</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl text-blue-600 mb-3"><i class="fas fa-undo"></i></div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Garansi Uang Kembali</h3>
+                    <p class="text-gray-600 text-sm">30 hari tanpa kecuali</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl text-blue-600 mb-3"><i class="fas fa-headset"></i></div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Dukungan 24/7</h3>
+                    <p class="text-gray-600 text-sm">Layanan pelanggan siap membantu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-semibold mb-4 flex items-center gap-2">
+                        <i class="fas fa-shopping-bag"></i>ShopHub
+                    </h3>
+                    <p class="text-sm">Platform belanja online terpercaya dengan jutaan produk pilihan.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Kategori</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Elektronik</a></li>
+                        <li><a href="#" class="hover:text-white transition">Fashion</a></li>
+                        <li><a href="#" class="hover:text-white transition">Perabotan</a></li>
+                        <li><a href="#" class="hover:text-white transition">Olahraga</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Bantuan</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-white transition">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="hover:text-white transition">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="hover:text-white transition">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Ikuti Kami</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-2xl hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-2xl hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; 2026 ShopHub. Semua hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
