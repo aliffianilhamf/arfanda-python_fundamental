@@ -60,7 +60,18 @@ print(f"Originalnya     : {nama}")
 print(f"Hasil Replace   : {nama.replace('Hendi', 'Sardi')}")
 
 
+# Join / menggabungkan string 
+print()
+print("Menggabungkan string")
+list_string = ['Hari', 'Ini', 'Cerah']
+hasil = "==".join(list_string)
+print(f"Original    : {list_string}")
+print(f"Hasil       : {hasil} ")
+
+
 # Menggunakan banyak string method dalam 1 line
+print()
+print("Menggunakan banyak string method dalam 1 line")
 text = "Belajar Python Fundamental sAngat meNyenangkan"
 # 1. menjadikan lower case
 # 2. replace Fundamental menjadi Advanced
@@ -95,3 +106,22 @@ Pisahkan string berdasarkan |, bersihkan spasi diawal dan akhir setiap item, uba
 - input : " Nama Customer | Total Belanja (IDR) | Alamat Pengiriman  "
 - target : ['nama_customer_', '_total_belanja_idr_', '_alamat_pengiriman']
 """
+# 1
+text = " JaKaRtA  "
+print(f"'{text.strip().lower()}'")
+
+# 2
+text = "Rp 15.000.000"
+print(f"'{text.replace('Rp ', '').replace('.', '')}'")
+
+# 3
+text = "IPHONE13-RED-256GB"
+print(f"'{text.split('-')}'")
+
+# 4
+text_list = ['belajar', 'python', 'untuk', 'pemula']
+print(f"'{'-'.join(text_list)}'")
+
+# 5
+text = " Nama Customer | Total Belanja (IDR) | Alamat Pengiriman  "
+print(f"'{text.strip().lower().replace(' ', '_').replace('(', '').replace(')', '').split('|')}'")
