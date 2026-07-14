@@ -1,2 +1,2 @@
-if is_bermasalah : 
-    print("Selamat kamu bebas dari hukuman")
+
+jumlah_tebakan = 0
